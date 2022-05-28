@@ -16,7 +16,7 @@ print("-" * 50)
 print("Scanning target "+target)
 print("Time Started: " + str(datetime.now()))
 print("-" * 50)
-
+#attempt scan on ports 50-85 @ target IP
 try:
     for port in range(50,85):
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
